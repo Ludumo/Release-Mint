@@ -1,4 +1,4 @@
-# NFT Music Player
+# Experience the future of music with our NFT Music Player and AI-powered release platform.
 
 ## Technology Stack & Tools
 
