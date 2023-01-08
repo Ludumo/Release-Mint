@@ -42,8 +42,8 @@ function App() {
         <>
           <Navbar expand="lg" bg="secondary" variant="dark">
             <Container>
-              <Navbar.Brand href="http://www.dappuniversity.com/bootcamp">
-                <img src={logo} width="40" height="40" className="" alt="" />
+              <Navbar.Brand href="https://ludumo-toni.netlify.app/">
+                <img src={logo} width="140" height="140" className="" alt="" />
                 &nbsp; Music NFT player
               </Navbar.Brand>
               <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -77,6 +77,8 @@ function App() {
         <div>
           {loading ? (
             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '80vh' }}>
+              
+               <img src={logo} width="140" height="160" className="" alt="" />
               <Spinner animation="border" style={{ display: 'flex' }} />
               <p className='mx-3 my-0'>Awaiting Metamask Connection...</p>
             </div>
