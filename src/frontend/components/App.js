@@ -13,6 +13,7 @@ import logo from './logo.png'
 import Home from './Home.js'
 import MyTokens from './MyTokens.js'
 import MyResales from './MyResales.js'
+import MintNFT from "./MintNFT";
 import './App.css';
 
 function App() {
@@ -37,7 +38,7 @@ function App() {
   }
   return (
     <BrowserRouter>
-      <div className="App">
+      <div style={{ backgroundColor: "black" }} className="App">
         <>
           <Navbar expand="lg" bg="secondary" variant="dark">
             <Container>
@@ -51,6 +52,7 @@ function App() {
                   <Nav.Link as={Link} to="/">Home</Nav.Link>
                   <Nav.Link as={Link} to="/my-tokens">My Tokens</Nav.Link>
                   <Nav.Link as={Link} to="/my-resales">My Resales</Nav.Link>
+                  <Nav.Link as={Link} to="/mint-nft">Mint NFT</Nav.Link>
                 </Nav>
                 <Nav>
                   {account ? (
@@ -88,6 +90,9 @@ function App() {
               } />
               <Route path="/my-resales" element={
                 <MyResales contract={contract} account={account} />
+              } />
+              <Route path="/mint-nft" element={
+                <MintNFT contract={contract} account={account} />
               } />
             </Routes>
           )}
